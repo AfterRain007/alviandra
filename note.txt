@@ -12,3 +12,31 @@
     <a class="nav-link" href="about-me.html">About Me</a>
   </div>
 </div>
+
+
+        <div class="row">
+          <div class="col-4">
+            <div class="card">
+              <img src="./public/images/Armont.png" class="card-img-top">
+              <div class="card-body">
+                <p class="card-text">Some quick example text to see if the card is working as intended Some quick example text to see if the card is working as intended</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card">
+              <img src="./public/images/Tanakayu Chava.jpg" class="card-img-top">
+              <div class="card-body">
+                <p class="card-text">Some quick example text to see if the card is working as intended Some quick example text to see if the card is working as intended</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card">
+              <img src="./public/images/Teravia.png" class="card-img-top">
+              <div class="card-body">
+                <p class="card-text">Some quick example text to see if the card is working as intended Some quick example text to see if the card is working as intended</p>
+              </div>
+            </div>
+          </div>
+        </div>
