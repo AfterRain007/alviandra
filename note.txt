@@ -40,3 +40,29 @@
             </div>
           </div>
         </div>
+
+    <section class="justify-content-center align-items-center p-5">
+      <h2 class="text-center mb-3">Meet Your Own Professional Agent</h2>
+      <div class="row">
+        <div class="col-6 text-center">
+          <img src="./public/images/Rendy.png" style="height: 150px; width: 150px;" class="rounded-circle">
+          <br>Rendy Alviandra
+        </div>
+        <div class="col-6">
+          <div style="display: flex; margin-bottom: 25px;">
+            <i class="fas fa-home" style="margin-right: 25px; font-size: 50px;"></i>
+            <div>
+              <h3 style="font-weight: bold;" id="properties-sold">1</h3>
+              <span>Properties Sold</span>
+            </div>
+          </div>
+          <div style="display: flex;">
+            <i class="fa-solid fa-dollar-sign" style="margin-right: 25px; font-size: 50px;"></i>
+            <div>
+              <h3 style="font-weight: bold;" id="total-sales-value">Rp1 Million+</h3>
+              <span>Total Sales Value</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
