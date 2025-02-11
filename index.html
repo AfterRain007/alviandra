@@ -37,6 +37,7 @@
         </div>
       </div>
     </nav>
+    <!-- Navbar -->
 
     <!-- HERO -->
     <section style="position: relative; height: 66vh;">
@@ -48,11 +49,12 @@
           </span>
       </div>
     </section>
+    <!-- HERO -->
 
     <!-- HOOK, Business Partner, and Carousel -->
-    <section class="py-5">
+    <section class="p-5">
       <div class="row">
-        <div class="col-5">
+        <div class="col-12 col-lg-5">
           <h3 style="font-weight: bold; text-align: justify;">A Window to Your Next Life</h3>
           <p style="text-align: justify;">Explore our diverse properties across our exclusive partners</p>
           <div class="row d-flex align-items-center">
@@ -83,7 +85,7 @@
           </div>
         </div>
         <div class="col-1"></div>
-        <div class="col-6">
+        <div class="col-12 col-lg-6">
           <div id="carouselExample" class="carousel slide">
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -117,17 +119,119 @@
         </div>
       </div>
     </section>
+    <!-- HOOK, Business Partner, and Carousel -->
 
     <!-- Main Listing -->
-    <section class="py-5">
+    <section class="px-5">
       <h3 style="font-weight: bold;">Explore our Latest Collection!</h3>
-      <button class="rounded-pill btn btn-sm btn-outline-dark me-2">Home</button>
-      <button class="rounded-pill btn btn-sm btn-outline-dark me-2">Kavling</button>
-      <button class="rounded-pill btn btn-sm btn-outline-dark me-2">Shophouse / Coliving</button>
+      <button class="rounded-pill btn btn-sm btn-outline-dark me-2" data-target="home">Home</button>
+      <button class="rounded-pill btn btn-sm btn-outline-dark me-2" data-target="kavling">Kavling</button>
+      <button class="rounded-pill btn btn-sm btn-outline-dark me-2" data-target="shophouse">Shophouse / Coliving</button>
+      <div class="content-container position-relative">
+        <div class="row row-swipe mt-1 g-3" id="home">
+          <div class="col-6 col-lg-3">
+            <div class="card">
+              <img src="public/images/Armont.png" class="card-img-top">
+              <div class="card-body">
+                <p class="card-title">Armont</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="card">
+              <img src="public/images/Teravia.png" class="card-img-top">
+              <div class="card-body">
+                <p class="card-title">Teravia</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="card">
+              <img src="public/images/Tanakayu Chava.jpg" class="card-img-top">
+              <div class="card-body">
+                <p class="card-title">Tanakayu</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="card">
+              <img src="public/images/temp_house.jpg" class="card-img-top">
+              <div class="card-body">
+                <p class="card-title">Tanakayu</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row row-swipe mt-1 g-3" id="kavling" style="display: none;">
+          <div class="col-6 col-lg-4">
+            <div class="card">
+              <div class="card-img-top">
+                <i class="fas fa-home" style="position: absolute; top: 40%; left: 50%; transform: translate(-40%, -50%);"> Soon to be released!</i>
+              </div>
+              <div class="card-body">
+                <p class="card-title">Kavling 1</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-lg-4">
+            <div class="card">
+              <div class="card-img-top">
+                <i class="fas fa-home" style="position: absolute; top: 40%; left: 50%; transform: translate(-40%, -50%);"> Soon to be released!</i>
+              </div>
+              <div class="card-body">
+                <p class="card-title">Kavling 2</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-lg-4">
+            <div class="card">
+              <div class="card-img-top">
+                <i class="fas fa-home" style="position: absolute; top: 40%; left: 50%; transform: translate(-40%, -50%);"> Soon to be released!</i>
+              </div>
+              <div class="card-body">
+                <p class="card-title">Kavling 3</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row row-swipe mt-1 g-3" id="shophouse" style="display: none;">
+          <div class="col-6 col-lg-4">
+            <div class="card">
+              <div class="card-img-top">
+                <i class="fas fa-home" style="position: absolute; top: 40%; left: 50%; transform: translate(-40%, -50%);"> Soon to be released!</i>
+              </div>
+              <div class="card-body">
+                <p class="card-title">Shophouse 1</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-lg-4">
+            <div class="card">
+              <div class="card-img-top">
+                <i class="fas fa-home" style="position: absolute; top: 40%; left: 50%; transform: translate(-40%, -50%);"> Soon to be released!</i>
+              </div>
+              <div class="card-body">
+                <p class="card-title">Shophouse 2</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-lg-4">
+            <div class="card">
+              <div class="card-img-top">
+                <i class="fas fa-home" style="position: absolute; top: 40%; left: 50%; transform: translate(-40%, -50%);"> Soon to be released!</i>
+              </div>
+              <div class="card-body">
+                <p class="card-title">Shophouse 3</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
+    <!-- Main Listing -->
 
     <!-- Endless Choice, Perfect Home -->
-    <section>
+    <section class="py-5">
       <div class="section-commitment parallax-container">
         <div class="parallax-background" style="background-image: url('./public/images/Tanakayu\ Chava.jpg');"></div>
         <div class="parallax-cover"></div>
@@ -167,6 +271,7 @@
         </div>
     </div>
     </section>
+    <!-- Endless Choice, Perfect Home -->
 
     <!-- <section>
       <h1>Frequently Asked Question</h1>
@@ -274,6 +379,29 @@
   updateParallax();
 </script>
   
+<script>
+  $(document).ready(function(){
+      let currentDiv = $("#home"); // Default visible section
+  
+      $("button[data-target]").click(function(){
+          let targetId = $(this).data("target");
+          let targetDiv = $("#" + targetId);
+  
+          if (targetDiv.is(":visible")) return; // Prevent redundant clicks
+  
+          // Slide out current div to the left
+          currentDiv.animate({ left: "-100%" }, 500, function(){
+              $(this).hide().css("left", "0"); // Reset position after hiding
+          });
+  
+          // Show new div, slide in from right
+          targetDiv.css({ left: "100%", display: "flex" }).animate({ left: "0" }, 500);
+  
+          // Update current div reference
+          currentDiv = targetDiv;
+      });
+  });
+</script>
     <!-- Custom script to handle the scroll effect -->
   </body>
 </html>

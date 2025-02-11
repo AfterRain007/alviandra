@@ -254,3 +254,24 @@ footer p {
     .commitment-carousel-button svg {height: 2.25vw; transition: 0.2s;}
     .commitment-carousel-button:hover svg {height: 3vw;}
 }
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.content-container {
+    position: relative;
+    overflow: hidden;
+    height: 300px; /* Adjust based on content */
+}
+
+.row-swipe {
+    position: absolute;
+    width: 100%;
+    transition: transform 0.5s ease-in-out;
+}
