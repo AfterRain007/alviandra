@@ -52,20 +52,20 @@ footer p {
     padding-bottom: 0.25rem;
     background-color: rgba(255, 255, 255, 0.5); /* 25% opacity for background */
 }
-  
+
 /* Smoothly fade out the logo */
-.navbar-scrolled .navbar-brand {
+/* .navbar-scrolled .navbar-brand {
     opacity: 0;
     display: none;
     transition: opacity 0.3s ease-in-out;
-}
-  
+} */
+
 /* Smoothly center the menu */
-.navbar-scrolled .navbar-nav {
-    justify-content: center !important; /* Ensure centering takes effect */
+/* .navbar-scrolled .navbar-nav {
+    justify-content: center !important;
     width: 100%;
-    transition: all 0.3s ease-in-out; /* Apply transition to all properties */
-}
+    transition: all 0.3s ease-in-out;
+} */
 
 .carousel-item img {
     width: 100%;
@@ -152,7 +152,6 @@ footer p {
     background-repeat: no-repeat;
     background-position: center;
     text-decoration: none;
-
 }
 .commitment-card-cover {
     position: absolute;
@@ -267,7 +266,6 @@ footer p {
 .content-container {
     position: relative;
     overflow: hidden;
-    height: 300px; /* Adjust based on content */
 }
 
 .row-swipe {
