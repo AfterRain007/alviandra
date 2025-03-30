@@ -30,10 +30,13 @@
         <div class="collapse navbar-collapse" id="navbar">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#" style="color: black;">Menu 1</a>
+              <a class="nav-link" href="#" style="color: black;">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" style="color: black;">Menu 2</a>
+              <a class="nav-link listings-link" href="#" style="color: black;">Listings</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link contact-link" href="#" style="color: black;">Contact Us</a>
             </li>
           </ul>
         </div>
@@ -330,7 +333,7 @@
 
     <!-- Endless Choice, Perfect Home -->
     <section>
-      <div class="section-commitment parallax-container">
+      <div class="section-commitment parallax-container" id="contact-us">
         <div class="parallax-background" style="background-image: url('./public/images/Tanakayu\ Chava.jpg');"></div>
         <div class="parallax-cover"></div>
         <div class="commitment-container">
@@ -411,6 +414,27 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
 
+    <script>
+      $(document).ready(function() {
+        $('.listings-link').click(function(e) {
+          e.preventDefault(); // Prevent the default anchor behavior
+      
+          $('html, body').animate({
+            scrollTop: $('#main-listing').offset().top - 55
+          }, 0); // Adjust scroll speed (800ms) as needed
+        });
+
+        
+        $('.contact-link').click(function(e) {
+          e.preventDefault(); // Prevent the default anchor behavior
+      
+          $('html, body').animate({
+            scrollTop: $('#contact-us').offset().top - 55
+          }, 0); // Adjust scroll speed (800ms) as needed
+        });
+      });
+    </script>
+    
     <script>
       const container = document.querySelector('.commitment-carousel-container');
       const cards = document.querySelectorAll('.commitment-card');

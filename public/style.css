@@ -334,7 +334,7 @@ footer p {
 }
 
 .partner-logo {
-    max-height: 40px;
+    max-height: 30px;
     width: auto; 
 }
 
@@ -346,3 +346,11 @@ footer p {
   .card-properties:hover {
     transform: scale(1.01);
   }
+
+.fa-brands{
+    transition: color 0.3s ease;
+}
+
+.fa-brands:hover {
+    color: #0000FF;
+}
