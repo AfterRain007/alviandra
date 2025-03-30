@@ -66,3 +66,38 @@
         </div>
       </div>
     </section>
+
+
+    <script>
+      $(document).ready(function() {
+          function incrementNumber(element, start, end, duration, isMillion) {
+              let current = start;
+              const increment = (end - start) / (duration / 100);
+              const interval = setInterval(function() {
+                  current += increment;
+                  if (current >= end) {
+                      current = end;
+                      clearInterval(interval);
+                  }
+                  if (isMillion) {
+                      $(element).text("Rp" + Math.floor(current) + " Million+");
+                  } else {
+                      $(element).text(Math.floor(current));
+                  }
+              }, 50);
+          }
+
+          const observer = new IntersectionObserver(function(entries) {
+              entries.forEach(entry => {
+                  if (entry.isIntersecting) {
+                      incrementNumber("#properties-sold", 0, 64, 2000, false);
+                      incrementNumber("#total-sales-value", 0, 24, 2000, true);
+                      observer.unobserve(entry.target);
+                  }
+              });
+          }, { threshold: 0.1 });
+
+          observer.observe(document.querySelector("#properties-sold"));
+          observer.observe(document.querySelector("#total-sales-value"));
+      });
+    </script> 

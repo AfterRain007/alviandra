@@ -275,7 +275,7 @@ footer p {
 }
 
 .footer {
-    min-height: 250px;
+    min-height: 200px;
     background-color: #002244;
     color: white;
     display: flex;
@@ -294,10 +294,27 @@ footer p {
     flex-wrap: wrap;
 }
 
+/* Original styles for the column container */
 .footer-column {
-    flex: 1;
-    min-width: 250px;
-    margin: 10px;
+  flex: 1;
+  min-width: 250px;
+  margin: 10px;
+}
+
+/* Add this rule to target the links inside the column */
+.footer-column a, .footer-column p {
+  display: block; /* Makes each link take its own line */
+  margin-bottom: 8px; /* Optional: Adds some space between the links */
+}
+
+/* Optional: If you don't want margin below the very last link */
+.footer-column a:last-child, .footer-column p:last-child {
+  margin-bottom: 0;
+}
+
+/* You might also want some margin below the heading */
+.footer-column h3 {
+    margin-bottom: 15px; /* Adjust as needed */
 }
 
 .footer a {
@@ -315,3 +332,17 @@ footer p {
     font-size: 14px;
     opacity: 0.8;
 }
+
+.partner-logo {
+    max-height: 40px;
+    width: auto; 
+}
+
+.card-properties {
+    text-decoration: none;
+    transition: transform 0.3s ease;
+  }
+  
+  .card-properties:hover {
+    transform: scale(1.01);
+  }
