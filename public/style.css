@@ -354,3 +354,14 @@ footer p {
 .fa-brands:hover {
     color: #0000FF;
 }
+
+.hero {
+    position: relative;
+    height: 66vh;
+}
+
+@media (max-width: 576px) {
+    .hero {
+        height: 100vh;
+    }
+}
