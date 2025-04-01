@@ -127,18 +127,10 @@
         <div class="row-swipe pt-3" id="home">
           <div class="row g-3">
             <div class="col-12 col-md-6 col-lg-3">
-              <a class="card card-properties" href="#">
+              <a class="card card-properties" href="#" data-bs-toggle="modal" data-bs-target="#armontModal">
                 <img src="public/images/Armont.png" class="card-img-top">
                 <div class="card-body">
                   <p class="card-title">Armont</p>
-                </div>
-              </a>
-            </div>
-            <div class="col-12 col-md-6 col-lg-3">
-              <a class="card card-properties" href="#">
-                <img src="public/images/Teravia.png" class="card-img-top">
-                <div class="card-body">
-                  <p class="card-title">Teravia</p>
                 </div>
               </a>
             </div>
@@ -152,22 +144,6 @@
             </div>
             <div class="col-12 col-md-6 col-lg-3">
               <a class="card card-properties" href="#">
-                <img src="public/images/temp_house.jpg" class="card-img-top">
-                <div class="card-body">
-                  <p class="card-title">Isyana</p>
-                </div>
-              </a>
-            </div>
-            <div class="col-12 col-md-6 col-lg-3">
-              <a class="card card-properties" href="#">
-                <img src="public/images/Armont.png" class="card-img-top">
-                <div class="card-body">
-                  <p class="card-title">Armont</p>
-                </div>
-              </a>
-            </div>
-            <div class="col-12 col-md-6 col-lg-3">
-              <a class="card card-properties" href="#">
                 <img src="public/images/Teravia.png" class="card-img-top">
                 <div class="card-body">
                   <p class="card-title">Teravia</p>
@@ -176,17 +152,41 @@
             </div>
             <div class="col-12 col-md-6 col-lg-3">
               <a class="card card-properties" href="#">
-                <img src="public/images/Tanakayu Chava.jpg" class="card-img-top">
+                <img src="public/images/temp_house.jpg" class="card-img-top">
                 <div class="card-body">
-                  <p class="card-title">Tanakayu</p>
+                  <p class="card-title">Isyana</p>
                 </div>
               </a>
             </div>
             <div class="col-12 col-md-6 col-lg-3">
               <a class="card card-properties" href="#">
-                <img src="public/images/temp_house.jpg" class="card-img-top">
+                <img src="public/images/enchante.jpg" class="card-img-top">
                 <div class="card-body">
-                  <p class="card-title">Isyana</p>
+                  <p class="card-title">Énchante</p>
+                </div>
+              </a>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <a class="card card-properties" href="#">
+                <img src="public/images/tresor.png" class="card-img-top">
+                <div class="card-body">
+                  <p class="card-title">Énchante</p>
+                </div>
+              </a>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <a class="card card-properties" href="#">
+                <img src="public/images/tresor.png" class="card-img-top">
+                <div class="card-body">
+                  <p class="card-title">Tresor</p>
+                </div>
+              </a>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <a class="card card-properties" href="#">
+                <img src="public/images/blizfield.png" class="card-img-top">
+                <div class="card-body">
+                  <p class="card-title">Blizfield</p>
                 </div>
               </a>
             </div>
@@ -405,6 +405,34 @@
           &copy; Alviandra | All Rights Reserved.
       </div>
   </section>
+
+  <div class="modal fade" id="armontModal" tabindex="-1" aria-labelledby="armontModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content border-0 rounded-4 shadow-lg">
+        <div class="modal-header border-0">
+          <h5 class="modal-title fw-bold text-uppercase" id="armontModalLabel">Armont Residence</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-6 col-12">
+              <img src="public/images/Armont.png" class="img-fluid rounded-3" alt="Armont Home">
+            </div>
+            <div class="col-md-6 col-12">
+              <h6 class="fw-semibold">Key Features:</h6>
+              <ul class="list-unstyled">
+                <li><i class="fa-solid fa-house"></i> 4 Bedrooms, 3 Bathrooms. 250 sqm</li>
+                <li><i class="fa-solid fa-tree"></i> Private Garden</li>
+                <li><i class="fa-solid fa-location-pin"></i> Prime Location</li>
+              </ul>
+              <p class="mt-3">Armont Residence offers an exquisite blend of luxury and comfort, designed for those who appreciate elegance and style. Experience unparalleled living in a modern home that complements your lifestyle.</p>
+              <button class="btn btn-primary w-100 fw-bold rounded-pill mt-3">Schedule a Visit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   
     <!-- <section>
       <h1>Frequently Asked Question</h1>
@@ -424,7 +452,6 @@
           }, 0); // Adjust scroll speed (800ms) as needed
         });
 
-        
         $('.contact-link').click(function(e) {
           e.preventDefault(); // Prevent the default anchor behavior
       
@@ -499,44 +526,52 @@
       updateParallax();
     </script>
       
-    <script>
-      $(document).ready(function(){
-          let currentDiv = $("#home"); // Default visible section
+      <script>
+        $(document).ready(function(){
+            let currentDiv = $("#home"); // Default visible section
       
-          $("button[data-target]").click(function(){
-              let targetId = $(this).data("target");
-              let targetDiv = $("#" + targetId);
-              let dataTargetDiv = $(`[data-target="${targetId}"]`);
-
-              $('#main-listing button').removeClass('active');
-
-              dataTargetDiv.addClass("active");
+            $("button[data-target]").click(function(){
+                let targetId = $(this).data("target");
+                let targetDiv = $("#" + targetId);
+                let dataTargetDiv = $(`[data-target="${targetId}"]`);
       
-              if (targetDiv.is(":visible")) return; // Prevent redundant clicks
+                $('#main-listing button').removeClass('active');
       
-              // Slide out current div to the left
-              currentDiv.animate({ left: "-100%" }, 500, function(){
-                  $(this).hide().css("left", "0"); // Reset position after hiding
-              });
+                dataTargetDiv.addClass("active");
       
-              // Show new div, slide in from right
-              targetDiv.removeClass("d-none").css({ left: "100%", display: "flex" }).animate({ left: "0" }, 500);
-
-              // Update current div reference
-              currentDiv = targetDiv;
-          });
-      });
-    </script>
+                if (targetDiv.is(":visible")) return; // Prevent redundant clicks
+      
+                // Slide out current div to the left
+                currentDiv.animate({ left: "-100%" }, 500, function(){
+                    $(this).hide().css("left", "0"); // Reset position after hiding
+                });
+      
+                // Show new div, slide in from right
+                targetDiv.removeClass("d-none").css({ left: "100%", display: "flex" }).animate({ left: "0" }, 500);
+      
+                // Update current div reference
+                currentDiv = targetDiv;
+      
+                // Call adjustContainerHeight after the div is shown and animated
+                adjustContainerHeight();
+            });
+        });
+      </script>
+      
 
     <script>
       function adjustContainerHeight() {
-          const contentContainer = $('.content-container');
-          const rowSwipe = $('.row-swipe');
+          setTimeout(() => {
+              const contentContainer = $('.content-container');
+              const rowSwipe = $('.row-swipe');
 
-          if (rowSwipe.length) {
-              const newHeight = rowSwipe[0].scrollHeight + 10;
-              contentContainer.stop().animate({ height: newHeight }, 500); // Adjust duration as needed
-          }
+              if (rowSwipe.length) {
+                  const newHeight = rowSwipe[0].scrollHeight + 10;
+                  if (newHeight > 100) { // Prevent it from being too small
+                      contentContainer.stop().animate({ height: newHeight }, 500);
+                  }
+              }
+          }, 100); // Small delay to ensure rendering is complete
       }
 
       // Run on page load and when content changes
