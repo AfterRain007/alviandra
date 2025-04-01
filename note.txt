@@ -101,3 +101,50 @@
           observer.observe(document.querySelector("#total-sales-value"));
       });
     </script> 
+
+      <!-- HOOK, Business Partner, and Carousel -->
+    <!-- <section class="p-5">
+      <div class="row">
+        <div class="col-12 col-lg"> 
+          <div class="row">
+            <div class="col text-center">
+              <img src="./public/images/Rendy.png" style="height: 150px; width: 150px;" class="rounded-circle">
+              <h2>Rendy Alviandra</h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-7">
+          <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./public/images/Armont.png" class="d-block w-100">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Armont</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./public/images/Tanakayu Chava.jpg" class="d-block w-100">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Tanakayu Chava</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./public/images/Teravia.png" class="d-block w-100">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Teravia</h5>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!-- HOOK, Business Partner, and Carousel -->
